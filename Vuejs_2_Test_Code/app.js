@@ -1,13 +1,15 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'kagaya',
-        job: 'ninja'
+       age:25
     },
 
     methods:{
-        greeting:function(){
-            return 'Good Morning'
+        add:function(){
+            this.age++;
+        },
+        subtract:function(){
+            this.age--;
         }
     }
 });

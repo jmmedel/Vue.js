@@ -1,3 +1,4 @@
+<!-- 5 4.27 -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,8 +9,11 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>Hey, {{ name }}</h1>
-            <h1>Hey, {{ job }}</h1>
+            <h1>Events</h1>
+            <button v-on:click="add">add a year</button>
+            <button v-on:click="subtract">Subtreact a Year</button>
+            <p>My age is {{age}}</p>
+           
         </div>
     </body>
 
