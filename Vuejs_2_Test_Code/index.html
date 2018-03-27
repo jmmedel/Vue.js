@@ -1,4 +1,4 @@
-<!-- 5 4.27 -->
+<!-- 5  -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,10 +10,12 @@
     <body>
         <div id="vue-app">
             <h1>Events</h1>
-            <button v-on:click="add">add a year</button>
-            <button v-on:click="subtract">Subtreact a Year</button>
+            <button v-on:click="add(1)">add a year</button>
+            <button v-on:click="subtract(1)">Subtreact a Year</button>
+            <button v-on:dblclick="add(10)">add 10 year</button>
+            <button v-on:dblclick="subtract(10)">Subtreact 10 year</button>
             <p>My age is {{age}}</p>
-           
+           <div id= "canvas"></div>
         </div>
     </body>
 
